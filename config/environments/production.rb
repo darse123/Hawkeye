@@ -45,12 +45,6 @@ SampleApp::Application.configure do
   # Set to :debug to see everything in the log.
   config.log_level = :info
 
-  Capybara.configure do |config|
-      config.match = :one
-      config.exact_options = true
-      config.ignore_hidden_elements = true
-      config.visible_text_only = true
-    end
 
 
   # Prepend all log lines with the following tags.
