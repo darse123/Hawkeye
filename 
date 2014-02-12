@@ -1,0 +1,95 @@
+commit eb87b5a28284c0d2efa0a4e75b018cfffafdf50a
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Wed Jan 29 20:59:31 2014 +0000
+
+     dropmenu working now 9.20
+
+commit b5c0713765d211439214092eff8cd5d3a975a999
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Tue Dec 10 14:31:32 2013 +0000
+
+    Finish sign in 99% dropmenu is causing a fuss
+
+commit 90868385cffe99b81b72cd67f5389f4b6cb6da5c
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Tue Nov 19 14:09:49 2013 +0000
+
+    Add SSL in production
+
+commit 59925873650090aca2c56038bea3885fdd6806b7
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Tue Nov 19 14:07:58 2013 +0000
+
+    Finish user signup
+
+commit 9a92784a9605897033fd138bb643631aeb880b2e
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Wed Nov 6 15:55:38 2013 +0000
+
+    Removed public/index.html
+
+commit a6c128e8cb0883752f61a79cc950cf314daaeef2
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Wed Nov 6 15:28:28 2013 +0000
+
+    Make a basic User model (including secure passwords)
+
+commit f9a0cb2478d45540b81d49b1f2b70cbd1632f28e
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Wed Nov 6 13:38:33 2013 +0000
+
+    having errors need looking,got the finshed sample
+
+commit 163534f873ef1f109abfbc1740908b2460d20ea6
+Author: Darren Doyle <darsedoyle@gmail.com>
+Date:   Tue Nov 5 19:03:41 2013 +0000
+
+    got model spec working
+
+commit 069e62133a407eadd495e4ff4df8761743c30902
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Thu Oct 24 18:18:29 2013 +0100
+
+    Finish layout and routes
+
+commit 72c03827eb26dcf117c1be7cd5caa7fb11526534
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Sun Oct 20 15:32:49 2013 +0100
+
+    Add a full_title helper
+
+commit c91e7703276c94d8b48caa39aa2c6cc7e9481647
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Thu Oct 17 19:40:14 2013 +0100
+
+    Finish static pages
+
+commit 675dcc248e000d9639a5e4b90d50113db86b8689
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Wed Oct 16 22:12:57 2013 +0100
+
+    home page working
+
+commit 53072ab856b74e30f8969504da7698e8227c2efb
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Wed Oct 16 21:20:39 2013 +0100
+
+    add a staticPages controller
+
+commit e75863b3411ba419b33c4027aec83ce9201db20d
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Wed Oct 16 19:55:11 2013 +0100
+
+    Improve the README
+
+commit bd97dd1ebc08ec0aaecbe07a485d170f5caef65e
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Wed Oct 16 19:46:28 2013 +0100
+
+    downgrade a gem  cabbry
+
+commit 9423fbf9d72c46ce8169f1b5b6d3d81c3e3df1da
+Author: Darse <darse@darse-K55A.(none)>
+Date:   Wed Oct 16 19:16:57 2013 +0100
+
+    Initial commit
