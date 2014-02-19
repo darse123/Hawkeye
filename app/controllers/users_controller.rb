@@ -1,13 +1,16 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:edit, :update]
+  before_action :signed_in_user, only: [:edit, :update, :index]
   before_action :correct_user,   only: [:edit, :update]
   
   def edit
     
   end
+  
+  def index
+    @users = User.all
+  end
 
   def update
-    
     if @user.update_attributes(user_params)
        flash[:success] = "Profile updated"
        redirect_to @user
