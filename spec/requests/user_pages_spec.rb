@@ -27,19 +27,20 @@ describe "User pages" do
         end
       end
     end
-  end
+  
+  
   
   describe "delete links" do
 
       it { should_not have_link('delete') }
-
+    
       describe "as an admin user" do
         let(:admin) { FactoryGirl.create(:admin) }
         before do
-          sign_in admin
+          sign_in admin           ##### Sign in as admin before checking delete link
           visit users_path
         end
-
+    
         it { should have_link('delete', href: user_path(User.first)) }
         it "should be able to delete another user" do
           expect do
@@ -49,6 +50,7 @@ describe "User pages" do
         it { should_not have_link('delete', href: user_path(admin)) }
       end
     end
+  end
 
   describe "edit" do
     let(:user) { FactoryGirl.create(:user) }
@@ -61,15 +63,15 @@ describe "User pages" do
       it { should have_content("Update your profile") }
       it { should have_title("Edit user") }
       it { should have_link('change', href: 'http://gravatar.com/emails') }
-   end
+    end
 
     describe "with invalid information" do
       before { click_button "Save changes" }
 
       it { should have_content('error') }
-   end
+    end
 
-   describe "with valid information" do
+     describe "with valid information" do
       let(:new_name)  { "New Name" }
       let(:new_email) { "new@example.com" }
       before do
@@ -80,32 +82,33 @@ describe "User pages" do
         click_button "Save changes"
       end
 
-      it { should have_title(new_name) }
-      it { should have_selector('div.alert.alert-success') }
-      it { should have_link('Sign out', href: signout_path) }
-      specify { expect(user.reload.name).to  eq new_name }
-      specify { expect(user.reload.email).to eq new_email }
-    end
+        it { should have_title(new_name) }
+        it { should have_selector('div.alert.alert-success') }
+        it { should have_link('Sign out', href: signout_path) }
+        specify { expect(user.reload.name).to  eq new_name }
+        specify { expect(user.reload.email).to eq new_email }
+      end
+  end
 
   describe "profile page" do
-    let(:user) { FactoryGirl.create(:user) }
-    before { visit user_path(user) }
-
-    it { should have_content(user.name) }
-    it { should have_title(user.name) }
+        let(:user) { FactoryGirl.create(:user) }
+        before { visit user_path(user) }
+    
+        it { should have_content(user.name) }
+        it { should have_title(user.name) }
   end
 
   describe "signup page" do
-
-    before { visit signup_path }
-
-    let(:submit) { "Create my account" }
-
-    describe "with invalid information" do
-      it "should not create a user" do
-        expect { click_button submit }.not_to change(User, :count)
+    
+        before { visit signup_path }
+    
+        let(:submit) { "Create my account" }
+    
+        describe "with invalid information" do
+          it "should not create a user" do
+            expect { click_button submit }.not_to change(User, :count)
       end
     end
   end
-end
+
 end
