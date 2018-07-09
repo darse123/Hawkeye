@@ -24,21 +24,13 @@ common: &default_settings
   # Logging level for log/newrelic_agent.log
   log_level: info
 
-  browser_monitoring.auto_instrument: true
+  
 
 
 
 # Environment-specific settings are in this section.
 # RAILS_ENV or RACK_ENV (as appropriate) is used to determine the environment.
 # If your application has other named environments, configure them here.
-development:
-  <<: *default_settings
-  app_name: My Application (Development)
-
-test:
-  <<: *default_settings
-  # It doesn't make sense to report to New Relic from automated test runs.
-  monitor_mode: false
 
 staging:
   <<: *default_settings
