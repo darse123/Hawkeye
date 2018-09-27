@@ -30,6 +30,18 @@
           <% end %>
         </ul>
       </nav>
+
+  <button onclick="myFunction()">Click me</button>
+
+   <script>
+function myFunction() {
+newInteraction = newrelic.interaction().save();
+
+  document.getElementById("demo").innerHTML = "Hello World";
+  newInteraction.end();
+}
+</script>
+
     </div>
   </div>
 </header>
