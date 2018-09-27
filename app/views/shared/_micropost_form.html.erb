@@ -3,8 +3,10 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
+  <script type="text/javascript">
   newInteraction = newrelic.interaction().save()
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
    newInteraction.end();
+   </script>
 <% end %>
 
