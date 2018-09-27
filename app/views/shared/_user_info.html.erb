@@ -3,18 +3,8 @@
   <%= current_user.name %>
 </h1>
 <span>
-	\hi
-	<script type="text/javascript">
-   newInteraction = newrelic.interaction().save();
-
   <%= link_to "view my profile", current_user %>
-   newInteraction.end();
-   </script>
 </span>
-
-
 <span>
-
-
   <%= pluralize(current_user.microposts.count, "micropost") %>
 </span>
